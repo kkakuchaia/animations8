@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.background{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/istockphoto-603164912-612x612.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+
+}
+.backgroundpic{
+    width:100%;
+}
+.car1{
+    position: absolute;
+    width: 330px;
+    animation: move linear 10s;
+    animation-iteration-count: infinite;
+    z-index: 20;
+}
+@keyframes move {
+    0%{
+        left: -400px;
+        top: 350px;
+    }
+    100%{
+        left: 1500px;
+        top: 350px;
+    }    
+}
+.car2{
+    position: absolute;
+    width: 350px;
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 10;
+}
+@keyframes move2 {
+    from {
+        top: 300px;
+        right: -400px;
+    }
+    to {
+        top: 300px;
+        right: 1500px;
+    }    
+   
+}
